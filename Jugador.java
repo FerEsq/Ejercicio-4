@@ -7,16 +7,21 @@
 
 public class Jugador extends Combatiente
 {
-    private Item item;
+    protected Item item;
     
     public Jugador()
     {
         super();
     }
 
+    public Item getItem()
+    {
+        return item;
+    }
+
     public void usarItem(Enemigo e)
     {
-        e.setVida(item.getDamage());
+        e.setVida(this.item.getDamage());
     }
 
 }

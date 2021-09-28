@@ -10,6 +10,7 @@ public class Guerrero extends Jugador
     public Guerrero()
     {
         super();
+        this.item = new Espada();
         this.nombre = "Guerrero";
         this.vida = 800;
         this.ataque = 30;

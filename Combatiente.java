@@ -60,6 +60,11 @@ public class Combatiente
         vida = vida - d;
     }
 
+    public int getVida()
+    {
+        return vida;
+    }
+
     public int getAtaque()
     {
         return ataque;

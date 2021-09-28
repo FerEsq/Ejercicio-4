@@ -7,7 +7,7 @@
 
 public class JefeBruja extends Bruja
 {
-    private String habilidadE;
+    private String habilidadHE;
     private int damageE;
 
     public JefeBruja()
@@ -16,13 +16,13 @@ public class JefeBruja extends Bruja
         this.nombre = "Jefe Bruja";
         this.vida = 350;
         this.ataque = 25;
-        habilidadE = "Encantamiento";
+        habilidadHE = "Encantamiento";
         damageE = 60;
     }
 
-    public String getHabilidadE()
+    public String getHabilidadHE()
     {
-        return habilidadE;
+        return habilidadHE;
     }
 
     public void usarHabilidadE(Jugador j)
