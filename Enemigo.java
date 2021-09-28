@@ -3,12 +3,12 @@
  * Programador: Fernanda Esquivel (esq21542@uvg.edu.gt).
  * Lenguaje: Java
  * Recursos: Visual Studio Code
- * Historial: Finalizado el 04.09.2021 */
+ * Historial: Finalizado el 28.09.2021 */
 
 public class Enemigo extends Combatiente
 {
-    private String habilidad;
-    private int damageH;
+    protected String habilidad;
+    protected int damageH;
     private boolean objetivo;
     
     public Enemigo()

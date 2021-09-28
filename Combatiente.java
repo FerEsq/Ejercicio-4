@@ -7,12 +7,12 @@
 
 public class Combatiente 
 {
-    private String nombre;
-    private String[] mensajes = new String[3];
+    protected String nombre;
+    protected String[] mensajes = new String[3];
     private boolean turno;
     private boolean derrotado;
-    private int vida;
-    private int ataque;
+    protected int vida;
+    protected int ataque;
 
     public Combatiente()
     {

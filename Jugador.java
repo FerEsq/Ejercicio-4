@@ -3,7 +3,7 @@
  * Programador: Fernanda Esquivel (esq21542@uvg.edu.gt).
  * Lenguaje: Java
  * Recursos: Visual Studio Code
- * Historial: Finalizado el 04.09.2021 */
+ * Historial: Finalizado el 28.09.2021 */
 
 public class Jugador extends Combatiente
 {
@@ -12,6 +12,11 @@ public class Jugador extends Combatiente
     public Jugador()
     {
 
+    }
+
+    public void usarItem(Enemigo e)
+    {
+        e.setVida(item.getDamage());
     }
 
 }
