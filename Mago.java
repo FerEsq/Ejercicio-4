@@ -9,6 +9,7 @@ public class Mago extends Enemigo
 {
     public Mago()
     {
+        super();
         this.nombre = "Mago";
         this.vida = 200;
         this.ataque = 10;

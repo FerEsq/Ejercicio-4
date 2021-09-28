@@ -11,7 +11,7 @@ public class Jugador extends Combatiente
     
     public Jugador()
     {
-
+        super();
     }
 
     public void usarItem(Enemigo e)

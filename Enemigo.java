@@ -9,11 +9,12 @@ public class Enemigo extends Combatiente
 {
     protected String habilidad;
     protected int damageH;
-    private boolean objetivo;
+    //private boolean objetivo;
     
     public Enemigo()
     {
-        objetivo = false;        
+        super();
+        //objetivo = false;        
     }
 
     public String getHabilidad()
@@ -21,7 +22,7 @@ public class Enemigo extends Combatiente
         return habilidad;
     }
 
-    public boolean getObjetivo()
+    /*public boolean getObjetivo()
     {
         return objetivo;
     }
@@ -34,7 +35,7 @@ public class Enemigo extends Combatiente
     public void setObjetivoF()
     {
         objetivo = false;
-    }
+    }*/
 
     public int getDamageH()
     {

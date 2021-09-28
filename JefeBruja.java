@@ -5,13 +5,14 @@
  * Recursos: Visual Studio Code
  * Historial: Finalizado el 28.09.2021 */
 
-public class JefeBruja 
+public class JefeBruja extends Bruja
 {
     private String habilidadE;
     private int damageE;
 
-    public JefeMago()
+    public JefeBruja()
     {
+        super();
         this.nombre = "Jefe Bruja";
         this.vida = 350;
         this.ataque = 25;
