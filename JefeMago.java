@@ -13,6 +13,7 @@ public class JefeMago extends Mago
     public JefeMago()
     {
         super();
+        this.jefe = true;
         this.nombre = "Jefe Mago";
         this.vida = 300;
         this.ataque = 20;

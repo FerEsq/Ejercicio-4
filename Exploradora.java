@@ -5,7 +5,7 @@
  * Recursos: Visual Studio Code
  * Historial: Finalizado el 28.09.2021 */
 
-//import
+ //Import
 import java.util.ArrayList;  
 
 public class Exploradora extends Jugador
@@ -26,7 +26,7 @@ public class Exploradora extends Jugador
         this.mensajes[2] = "No debiste retarme a una batalla";
     }
 
-    public void atacarE(ArrayList <Enemigo> es)
+    public void usarDalla(ArrayList <Enemigo> es)
     {
         for (int i = 0; i < es.size(); i++)
         {
@@ -35,7 +35,7 @@ public class Exploradora extends Jugador
     }
 
     // método curación usando el anillo, es exclusivo de la exploradora
-    public void curar()
+    public void usarAnillo()
     {
         if (this.vida < 500)
         {

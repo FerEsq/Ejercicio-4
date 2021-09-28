@@ -10,6 +10,7 @@ public class Bruja extends Enemigo
     public Bruja()
     {
         super();
+        this.jefe = false;
         this.nombre = "Bruja";
         this.vida = 150;
         this.ataque = 15;

@@ -5,6 +5,9 @@
  * Recursos: Visual Studio Code
  * Historial: Finalizado el 28.09.2021 */
 
+//import
+import java.util.ArrayList;  
+
 public class Jugador extends Combatiente
 {
     protected Item item;
@@ -19,9 +22,12 @@ public class Jugador extends Combatiente
         return item;
     }
 
-    public void usarItem(Enemigo e)
+    public void atacarES(ArrayList <Enemigo> es)
     {
-        e.setVida(this.item.getDamage());
+        for (int i = 0; i < es.size(); i++)
+        {
+            es.get(i).setVida(this.ataque);
+        }
     }
 
 }

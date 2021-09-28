@@ -5,7 +5,7 @@
  * Recursos: Visual Studio Code
  * Historial: Finalizado el 28.09.2021 */
 
-public class Anillo 
+public class Anillo extends Item
 {
     public Anillo()
     {

@@ -19,8 +19,8 @@ public class Guerrero extends Jugador
         this.mensajes[2] = "Siempre logro repartir un poco de justicia";
     }
     
-    public void atacarE(Enemigo e)
+    public void usarEspada(Enemigo e)
     {
-        e.setVida(this.ataque);
+        e.setVida(this.item.getDamage());
     }
 }
