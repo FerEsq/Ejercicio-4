@@ -10,11 +10,10 @@ public class Item
     protected String tipo;
     protected int damage;
     protected int usos;
-    private boolean roto;
 
     public Item()
     {
-        roto = false;
+        
     }
     
     /** 
@@ -44,19 +43,6 @@ public class Item
     public void setUsos()
     {
         usos--;
-    }
-    
-    /** 
-     * @return boolean
-     */
-    public boolean getRoto()
-    {
-        return roto;
-    }
-
-    public void setRotoT()
-    {
-        roto = true;
     }
 
 }

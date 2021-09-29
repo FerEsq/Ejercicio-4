@@ -11,7 +11,6 @@ public class Enemigo extends Combatiente
     protected String habilidadE;
     protected int damageH;
     protected int damageE;
-    protected boolean jefe;
     
     public Enemigo()
     {
@@ -24,14 +23,6 @@ public class Enemigo extends Combatiente
     public String getHabilidad()
     {
         return habilidad;
-    }
-    
-    /** 
-     * @return boolean
-     */
-    public boolean getJefe()
-    {
-        return jefe;
     }
     
     /** 

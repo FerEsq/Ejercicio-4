@@ -6,9 +6,7 @@
  * Historial: Finalizado el 28.09.2021 */
 
 public class JefeMago extends Mago
-{
-    
-
+{  
     public JefeMago()
     {
         super();

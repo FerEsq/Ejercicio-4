@@ -13,7 +13,7 @@ public class Vista
 {
     Scanner scan = new Scanner(System.in);
 
-    public VistaF()
+    public Vista()
     {  
 
     }
