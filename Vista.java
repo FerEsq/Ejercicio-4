@@ -63,7 +63,8 @@ public class Vista
         System.out.println("¿Que desea que el enemigo haga? (ingrese solo el número)");	
 		System.out.println("1. Atacar");
 		System.out.println("2. Usar habilidad");
-        System.out.println("3. Retirarse");
+        System.out.println("3. Saltar turno");
+        System.out.println("4. Retirarse");
 
         op = scan.nextInt();
         return op;
@@ -77,7 +78,8 @@ public class Vista
 		System.out.println("1. Atacar");
 		System.out.println("2. Usar habilidad");
         System.out.println("3. Usar habilidad especial");
-        System.out.println("4. Retirarse");
+        System.out.println("4. Saltar turno");
+        System.out.println("5. Retirarse");
 
         op = scan.nextInt();
         return op;
@@ -90,7 +92,8 @@ public class Vista
         System.out.println("¿Que desea hacer? (ingrese solo el número)");	
 		System.out.println("1. Atacar");
 		System.out.println("2. Usar espada");
-        System.out.println("3. Retirarse");
+        System.out.println("3. Saltar turno");
+        System.out.println("4. Retirarse");
 
         op = scan.nextInt();
         return op;
@@ -117,7 +120,8 @@ public class Vista
 		System.out.println("1. Atacar");
 		System.out.println("2. Usar dalla");
         System.out.println("3. Usar anillo");
-        System.out.println("4. Retirarse");
+        System.out.println("4. Saltar turno");
+        System.out.println("5. Retirarse");
 
         op = scan.nextInt();
         return op;

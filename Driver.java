@@ -162,12 +162,20 @@ class Driver
                             }
                             if (opJ == 3)
                             {
+                                contador++;
+                                vista.mostrarLogs(logs);
+                                turnoE = true;
+                                turnoJ = false;
+                                
+                            }
+                            if (opJ == 4)
+                            {
                                 salir = true;
                                 turnoE = false;
                                 turnoJ = false;
                                 vista.mostrarDespedida();
                             }
-                            if (opJ > 3)
+                            if (opJ > 4)
                             {
                                 vista.mostrarError();
                             }
@@ -210,12 +218,20 @@ class Driver
                             }
                             if (opJ == 4)
                             {
+                                contador++;
+                                vista.mostrarLogs(logs);
+                                turnoE = true;
+                                turnoJ = false;
+                                
+                            }
+                            if (opJ == 5)
+                            {
                                 salir = true;
                                 turnoE = false;
                                 turnoJ = false;
                                 vista.mostrarDespedida();
                             }
-                            if (opJ > 4)
+                            if (opJ > 5)
                             {
                                 vista.mostrarError();
                             }
@@ -265,12 +281,19 @@ class Driver
                             }
                             if (opE == 4)
                             {
+                                vista.mostrarLogs(logs);
+                                turnoJ = true;
+                                turnoE = false;
+                                
+                            }
+                            if (opE == 5)
+                            {
                                 salir = true;
                                 turnoE = false;
                                 turnoJ = false;
                                 vista.mostrarDespedida();
                             }
-                            if (opE > 4)
+                            if (opE > 5)
                             {
                                 vista.mostrarError();
                             }
@@ -310,12 +333,19 @@ class Driver
                                 }
                                 if (opE == 3)
                                 {
+                                    vista.mostrarLogs(logs);
+                                    turnoJ = true;
+                                    turnoE = false;
+                                    
+                                }
+                                if (opE == 4)
+                                {
                                     salir = true;
                                     turnoE = false;
                                     turnoJ = false;
                                     vista.mostrarDespedida();
                                 }
-                                if (opE > 3)
+                                if (opE > 4)
                                 {
                                     vista.mostrarError();
                                 }
@@ -356,12 +386,19 @@ class Driver
                                 }
                                 if (opE == 4)
                                 {
+                                    vista.mostrarLogs(logs);
+                                    turnoJ = true;
+                                    turnoE = false;
+                                    
+                                }
+                                if (opE == 5)
+                                {
                                     salir = true;
                                     turnoE = false;
                                     turnoJ = false;
                                     vista.mostrarDespedida();
                                 }
-                                if (opE > 4)
+                                if (opE > 5)
                                 {
                                     vista.mostrarError();
                                 }
@@ -402,12 +439,19 @@ class Driver
                                 }
                                 if (opE == 3)
                                 {
+                                    vista.mostrarLogs(logs);
+                                    turnoJ = true;
+                                    turnoE = false;
+                                    
+                                }
+                                if (opE == 4)
+                                {
                                     salir = true;
                                     turnoE = false;
                                     turnoJ = false;
                                     vista.mostrarDespedida();
                                 }
-                                if (opE > 3)
+                                if (opE > 4)
                                 {
                                     vista.mostrarError();
                                 }
@@ -443,12 +487,19 @@ class Driver
                                 }
                                 if (opE == 3)
                                 {
+                                    vista.mostrarLogs(logs);
+                                    turnoJ = true;
+                                    turnoE = false;
+                                    
+                                }
+                                if (opE == 4)
+                                {
                                     salir = true;
                                     turnoE = false;
                                     turnoJ = false;
                                     vista.mostrarDespedida();
                                 }
-                                if (opE > 3)
+                                if (opE > 4)
                                 {
                                     vista.mostrarError();
                                 }
@@ -489,12 +540,19 @@ class Driver
                                 }
                                 if (opE == 4)
                                 {
+                                    vista.mostrarLogs(logs);
+                                    turnoJ = true;
+                                    turnoE = false;
+                                    
+                                }
+                                if (opE == 5)
+                                {
                                     salir = true;
                                     turnoE = false;
                                     turnoJ = false;
                                     vista.mostrarDespedida();
                                 }
-                                if (opE > 4)
+                                if (opE > 5)
                                 {
                                     vista.mostrarError();
                                 }
@@ -513,8 +571,6 @@ class Driver
                             }
                         }
                     }
-
-
                     vista.mostrarLogs(logs);
                     turnoJ = true;
                     turnoE = false;                
