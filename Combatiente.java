@@ -14,29 +14,44 @@ public class Combatiente
 
     public Combatiente()
     {
-        
-    }
 
+    }
+    
+    /** 
+     * @return String
+     */
     public String getNombre()
     {
         return nombre;
     }
-
+    
+    /** 
+     * @return String[]
+     */
     public String[] getMensajes()
     {
         return mensajes;
     }
-
+    
+    /** 
+     * @param d
+     */
     public void setVida(int d)
     {
         vida = vida - d;
     }
-
+    
+    /** 
+     * @return int
+     */
     public int getVida()
     {
         return vida;
     }
-
+    
+    /** 
+     * @return int
+     */
     public int getAtaque()
     {
         return ataque;

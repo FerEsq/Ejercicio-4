@@ -10,7 +10,6 @@ public class JefeBruja extends Bruja
     public JefeBruja()
     {
         super();
-        this.jefe = true;
         this.nombre = "Jefe Bruja";
         this.vida = 350;
         this.ataque = 25;

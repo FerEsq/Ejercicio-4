@@ -17,37 +17,59 @@ public class Enemigo extends Combatiente
     {
         super();  
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getHabilidad()
     {
         return habilidad;
     }
-
+    
+    /** 
+     * @return boolean
+     */
     public boolean getJefe()
     {
         return jefe;
     }
-
+    
+    /** 
+     * @return int
+     */
     public int getDamageH()
     {
         return damageH;
     }
-
+    
+    /** 
+     * @param j
+     */
     public void atacar(Jugador j)
     {
         j.setVida(this.getAtaque());
     }
-
+    
+    /** 
+     * @param j
+     * @param d
+     */
     public void usarHabilidad(Jugador j, int d)
     {
         j.setVida(d);
     }
-
+    
+    /** 
+     * @return int
+     */
     public int getDamageE()
     { 
         return damageE;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getHabilidadE()
     {
         return habilidadE;

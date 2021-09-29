@@ -16,17 +16,26 @@ public class Item
     {
         roto = false;
     }
-
+    
+    /** 
+     * @return String
+     */
     public String getTipo()
     {
         return tipo;
     }
-
+    
+    /** 
+     * @return int
+     */
     public int getDamage()
     {
         return damage;
     }
-
+    
+    /** 
+     * @return int
+     */
     public int getUsos()
     {
         return usos;
@@ -36,7 +45,10 @@ public class Item
     {
         usos--;
     }
-
+    
+    /** 
+     * @return boolean
+     */
     public boolean getRoto()
     {
         return roto;

@@ -16,12 +16,18 @@ public class Jugador extends Combatiente
     {
         super();
     }
-
+    
+    /** 
+     * @return Item
+     */
     public Item getItem()
     {
         return item;
     }
-
+    
+    /** 
+     * @param es
+     */
     public void atacarES(ArrayList <Enemigo> es)
     {
         for (int i = 0; i < es.size(); i++)
@@ -29,12 +35,18 @@ public class Jugador extends Combatiente
             es.get(i).setVida(this.ataque);
         }
     }
-
+    
+    /** 
+     * @param e
+     */
     public void usarItem(Enemigo e)
     {
         e.setVida(this.item.getDamage());
     }
-
+    
+    /** 
+     * @param es
+     */
     public void usarItemD(ArrayList <Enemigo> es)
     {
         for (int i = 0; i < es.size(); i++)
@@ -42,7 +54,10 @@ public class Jugador extends Combatiente
             es.get(i).setVida(this.ataque);
         }
     }
-
+    
+    /** 
+     * @param j
+     */
     public void usarItemC(Jugador j)
     { 
         if (this.vida < 500)

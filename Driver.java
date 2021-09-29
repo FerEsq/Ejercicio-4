@@ -69,8 +69,7 @@ class Driver
             vista.separar();
 
             // ---------------------------------------- ENEMIGOS --------------------------------------   
-            int n = 2;
-            //1 + rnd.nextInt(2);
+            int n = 1 + rnd.nextInt(2);
             if (n == 1) //un enemigo
             {
                 int s = 1 + rnd.nextInt(2);
@@ -126,9 +125,9 @@ class Driver
                 }
             }
             
-            // ---------------------------------------- TURNOS --------------------------------------
             while (salir == false) //mientras el simulador este activo
             {
+            // ---------------------------------------- TURNO JUGADOR --------------------------------------
                 if (turnoJ == true) //turno del jugador
                 {
                     vista.mostrarEstatus(jugador, enemigos);                 
@@ -182,6 +181,7 @@ class Driver
                         }
                         else
                         {
+                            vista.separar();
                             vista.mostrarFrase(jugador, 1); //frase que dice el jugador al morir
                             vista.separar();
                             for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al ganar
@@ -238,6 +238,7 @@ class Driver
                         }
                         else
                         {
+                            vista.separar();
                             vista.mostrarFrase(jugador, 1); //frase que dice el jugador al morir
                             vista.separar();
                             for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al ganar
@@ -255,6 +256,7 @@ class Driver
                     turnoJ = false;
                 }
 
+                // ---------------------------------------- TURNO ENEMIGOS --------------------------------------
                 if (turnoE == true)
                 {
                     vista.mostrarEstatus(jugador, enemigos); 
@@ -300,6 +302,7 @@ class Driver
                         }
                         else
                         {
+                            vista.separar();
                             vista.mostrarFrase(jugador, 2); //frase que dice el jugador al ganar
                             vista.separar();
                             for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al morir
@@ -352,6 +355,7 @@ class Driver
                             }
                             else
                             {
+                                vista.separar();
                                 vista.mostrarFrase(jugador, 2); //frase que dice el jugador al ganar
                                 vista.separar();
                                 for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al morir
@@ -405,6 +409,7 @@ class Driver
                             }
                             else
                             {
+                                vista.separar();
                                 vista.mostrarFrase(jugador, 2); //frase que dice el jugador al ganar
                                 vista.separar();
                                 for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al morir
@@ -458,6 +463,7 @@ class Driver
                             }
                             else
                             {
+                                vista.separar();
                                 vista.mostrarFrase(jugador, 2); //frase que dice el jugador al ganar
                                 vista.separar();
                                 for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al morir
@@ -506,6 +512,7 @@ class Driver
                             }
                             else
                             {
+                                vista.separar();
                                 vista.mostrarFrase(jugador, 2); //frase que dice el jugador al ganar
                                 vista.separar();
                                 for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al morir
@@ -559,6 +566,7 @@ class Driver
                             }
                             else
                             {
+                                vista.separar();
                                 vista.mostrarFrase(jugador, 2); //frase que dice el jugador al ganar
                                 vista.separar();
                                 for (int i = 0; i < enemigos.size(); i++) //frase que dicen los enemigos al morir

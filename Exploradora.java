@@ -25,7 +25,10 @@ public class Exploradora extends Jugador
         this.mensajes[1] = "Supongo que los buenos no siempre ganan";
         this.mensajes[2] = "No debiste retarme a una batalla";
     }
-
+    
+    /** 
+     * @param es
+     */
     public void usarItem(ArrayList <Enemigo> es)
     {
         for (int i = 0; i < es.size(); i++)
