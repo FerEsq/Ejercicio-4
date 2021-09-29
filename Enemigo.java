@@ -8,12 +8,14 @@
 public class Enemigo extends Combatiente
 {
     protected String habilidad;
+    protected String habilidadE;
     protected int damageH;
+    protected int damageE;
     protected boolean jefe;
     
     public Enemigo()
     {
-        super();      
+        super();  
     }
 
     public String getHabilidad()
@@ -36,8 +38,19 @@ public class Enemigo extends Combatiente
         j.setVida(this.getAtaque());
     }
 
-    public void usarHabilidad(Jugador j)
+    public void usarHabilidad(Jugador j, int d)
     {
-        j.setVida(damageH);
+        j.setVida(d);
     }
+
+    public int getDamageE()
+    { 
+        return damageE;
+    }
+
+    public String getHabilidadE()
+    {
+        return habilidadE;
+    }
+    
 }

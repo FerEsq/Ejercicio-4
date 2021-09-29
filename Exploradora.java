@@ -26,20 +26,11 @@ public class Exploradora extends Jugador
         this.mensajes[2] = "No debiste retarme a una batalla";
     }
 
-    public void usarDalla(ArrayList <Enemigo> es)
+    public void usarItem(ArrayList <Enemigo> es)
     {
         for (int i = 0; i < es.size(); i++)
         {
             es.get(i).setVida(this.ataque);
-        }
-    }
-
-    // método curación usando el anillo, es exclusivo de la exploradora
-    public void usarAnillo()
-    {
-        if (this.vida < 500)
-        {
-            this.vida += item.getDamage();
         }
     }
     

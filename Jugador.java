@@ -30,4 +30,25 @@ public class Jugador extends Combatiente
         }
     }
 
+    public void usarItem(Enemigo e)
+    {
+        e.setVida(this.item.getDamage());
+    }
+
+    public void usarItemD(ArrayList <Enemigo> es)
+    {
+        for (int i = 0; i < es.size(); i++)
+        {
+            es.get(i).setVida(this.ataque);
+        }
+    }
+
+    public void usarItemC(Jugador j)
+    { 
+        if (this.vida < 500)
+        {
+            this.vida += item.getDamage();
+        }
+    }
+
 }

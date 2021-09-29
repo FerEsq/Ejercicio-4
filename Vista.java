@@ -44,18 +44,6 @@ public class Vista
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
     }
 
-    //Menu
-    public int mostrarMenu()
-    {
-        int op = 0;
-        System.out.println("¿Que opción desea ejecutar? (ingrese solo el número)");	
-		System.out.println("1. Iniciar batalla");
-		System.out.println("2. Salir");
-
-        op = scan.nextInt();
-        return op;
-    }
-
     //Menú rol
     public int pedirRol()
     {
@@ -72,7 +60,7 @@ public class Vista
     public int menuEnemigo()
     {
         int op = 0;
-        System.out.println("¿Que desea hacer? (ingrese solo el número)");	
+        System.out.println("¿Que desea que el enemigo haga? (ingrese solo el número)");	
 		System.out.println("1. Atacar");
 		System.out.println("2. Usar habilidad");
         System.out.println("3. Retirarse");
@@ -85,7 +73,7 @@ public class Vista
     public int menuJefe()
     {
         int op = 0;
-        System.out.println("¿Que desea hacer? (ingrese solo el número)");	
+        System.out.println("¿Que desea que el enemigo haga? (ingrese solo el número)");	
 		System.out.println("1. Atacar");
 		System.out.println("2. Usar habilidad");
         System.out.println("3. Usar habilidad especial");
@@ -137,9 +125,36 @@ public class Vista
 
     public void mostrarFrase(Combatiente c, int p)
     {
+        System.out.println("✧ " + c.getMensajes()[p] + " ✧");
+    }
+
+    public void mostrarEstatus(Jugador j, ArrayList <Enemigo> e)
+    {
+        System.out.println("~~~~~~~~~~~~~~~~ Estatus ~~~~~~~~~~~~~~~");
+        System.out.println("• " + j.getNombre() + ": " + j.getVida() + " HP");
+        for (int i = 0; i < e.size(); i++)
+        {
+            System.out.println("• " + e.get(i).getNombre() + ": " + e.get(i).getVida() + " HP");
+        }
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    }
+
+    public void separar()
+    {
         System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-        System.out.println(c.getMensajes()[p]);
-        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    }
+
+    public void mostrarLogs(ArrayList <String> l)
+    {
+        System.out.println("~~~~~~~~~~~~~~~ Acciones ~~~~~~~~~~~~~~~");
+        for (int i = l.size() - 1; i > l.size() - 4; i--)
+        {
+            if (l.isEmpty() == false)
+            {
+                System.out.println("• " + l.get(i));
+            }
+        }
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
     }
     
 }

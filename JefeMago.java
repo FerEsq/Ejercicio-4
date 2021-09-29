@@ -7,8 +7,7 @@
 
 public class JefeMago extends Mago
 {
-    private String habilidadHE;
-    private int damageE;
+    
 
     public JefeMago()
     {
@@ -17,18 +16,8 @@ public class JefeMago extends Mago
         this.nombre = "Jefe Mago";
         this.vida = 300;
         this.ataque = 20;
-        habilidadHE = "Lluvia de rayos";
-        damageE = 50;
+        this.habilidadE = "Lluvia de rayos";
+        this.damageE = 50;
     }
-    
-    public String getHabilidadHE()
-    {
-        return habilidadHE;
-    }
-
-    public void usarHabilidadE(Jugador j)
-    {
-        j.setVida(damageE);
-    }
-    
+       
 }

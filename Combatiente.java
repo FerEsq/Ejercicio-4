@@ -9,15 +9,12 @@ public class Combatiente
 {
     protected String nombre;
     protected String[] mensajes = new String[3];
-    private boolean turno;
-    private boolean derrotado;
     protected int vida;
     protected int ataque;
 
     public Combatiente()
     {
-        this.turno = false;
-        this.derrotado = false;
+        
     }
 
     public String getNombre()
@@ -28,31 +25,6 @@ public class Combatiente
     public String[] getMensajes()
     {
         return mensajes;
-    }
-
-    public boolean getTurno()
-    {
-        return turno;
-    }
-
-    public void setTurnoF()
-    {
-        turno = false;
-    }
-
-    public void setTurnoT()
-    {
-        turno = true;
-    }
-
-    public boolean getDerrotado()
-    {
-        return derrotado;
-    }
-
-    public void setDerrotadoT()
-    {
-        derrotado = true;
     }
 
     public void setVida(int d)

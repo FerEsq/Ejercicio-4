@@ -16,7 +16,7 @@ public class Bruja extends Enemigo
         this.ataque = 15;
         this.mensajes[0] = "No necesito una escoba para acabar contigo";
         this.mensajes[1] = "Oh no, necesitaré muchas posiones para recuperarme";
-        this.mensajes[2] = "¡La osucridad siempre prevalece!";
+        this.mensajes[2] = "¡La oscuridad siempre prevalece!";
         this.habilidad = "Hechizo oscuro";
         this.damageH = 35;
     }    
